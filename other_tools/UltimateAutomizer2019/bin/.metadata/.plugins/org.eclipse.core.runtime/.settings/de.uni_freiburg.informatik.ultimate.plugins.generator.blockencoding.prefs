@@ -1,0 +1,4 @@
+Minimize\ Call\ and\ Return\ Edges=false
+Rating-Boundary\ (empty\ for\ LBE)=0
+Strategy\ for\ the\ edge\ rating=DISJUNCTIVE_RATING
+eclipse.preferences.version=1

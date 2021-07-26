@@ -1,0 +1,4 @@
+Compute\ Hoare\ Annotation\ of\ negated\ interpolant\ automaton,\ abstraction\ and\ CFG=true
+Positions\ where\ we\ compute\ the\ Hoare\ Annotation=LoopsAndPotentialCycles
+Trace\ refinement\ strategy=CAMEL
+eclipse.preferences.version=1

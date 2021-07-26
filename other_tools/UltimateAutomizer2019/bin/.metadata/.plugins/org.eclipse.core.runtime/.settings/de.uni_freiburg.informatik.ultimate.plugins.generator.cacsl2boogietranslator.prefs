@@ -1,0 +1,7 @@
+Assume\ nondeterminstic\ values\ are\ in\ range=false
+Check\ division\ by\ zero=IGNORE
+Check\ if\ freed\ pointer\ was\ valid=false
+Check\ unreachability\ of\ error\ function\ in\ SV-COMP\ mode=false
+How\ to\ treat\ unsigned\ ints\ differently\ from\ normal\ ones=IGNORE
+Size\ of\ pointer\ (in\ bytes)=8
+eclipse.preferences.version=1

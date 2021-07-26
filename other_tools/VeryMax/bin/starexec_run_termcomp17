@@ -1,0 +1,30 @@
+#!/bin/bash
+#STAREXEC_WALLCLOCK_LIMIT = 60
+start=$(($(date +%s%N)/1000000))
+./verymax -solver-timeout 4 -global-timeout 60 -parallel-exec 900 $1 &> outproof.txt
+
+res=$?
+
+if [ -f outproof.txt ]
+then 
+  if [ $res -eq 1 ] 
+  then 
+    echo "YES"
+    # echo
+    # cat outproof.txt
+  elif [ $res -eq 2 ] 
+  then
+    echo "NO" 
+    # echo
+    # cat outproof.txt
+  else
+    echo "MAYBE"
+  fi
+else 
+  echo "MAYBE"
+fi
+
+end=$(($(date +%s%N)/1000000))
+
+runtime=$(($end-$start))
+echo "total time used: $runtime" 

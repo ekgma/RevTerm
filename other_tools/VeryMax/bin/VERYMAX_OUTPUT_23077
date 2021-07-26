@@ -1,0 +1,7 @@
+Trying to remove transition: <l2, l2, 0 <= main_x, {main_x -> main_x + main_y, main_y -> 1 + main_y, rest remain the same}>
+Solving with 1 template(s).
+
+LOG: CALL solveNonLinearGetFirstSolution
+
+LOG: RETURN solveNonLinearGetFirstSolution - Elapsed time: 0.005871s
+Time used: 0.005473

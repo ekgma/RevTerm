@@ -1,0 +1,13 @@
+Add\ implications\ only\ for\ indices\ occuring\ in\ the\ current\ formula=true
+Add\ inequalities\ as\ additional\ conjuncts\ to\ the\ transformula=false
+Buchi\ interpolant\ automaton\ construction\ strategy=DANDELION
+Command\ for\ external\ solver\ (GNTA\ synthesis)=z3 SMTLIB2_COMPLIANT\=true -memory\:4560 -smt2 -in -t\:12000
+Compute\ Interpolants\ along\ a\ Counterexample=ForwardPredicates
+Construct\ termination\ proof\ for\ TermComp=true
+Rank\ analysis=LINEAR_WITH_GUESSES
+Try\ to\ simplify\ termination\ arguments=true
+Use\ external\ solver\ (rank\ synthesis)=false
+Use\ old\ map\ elimination=false
+Use\ only\ trivial\ implications\ for\ array\ writes=true
+Use\ only\ trivial\ implications\ for\ index\ assignments=true
+eclipse.preferences.version=1

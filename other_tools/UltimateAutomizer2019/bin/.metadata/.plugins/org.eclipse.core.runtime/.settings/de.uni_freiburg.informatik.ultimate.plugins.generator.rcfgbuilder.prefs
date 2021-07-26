@@ -1,0 +1,7 @@
+Command\ for\ external\ solver=z3 SMTLIB2_COMPLIANT\=true -memory\:4560 -smt2 -in -t\:5000
+Convert\ code\ blocks\ to\ CNF=false
+Dump\ SMT\ script\ to\ file=false
+Remove\ goto\ edges\ from\ RCFG=false
+Size\ of\ a\ code\ block=SequenceOfStatements
+To\ the\ following\ directory=/home/matthias/ultimate/dump
+eclipse.preferences.version=1

@@ -1,0 +1,26 @@
+Solving with 1 template(s).
+
+LOG: CALL solveNonLinearGetFirstSolution
+
+LOG: RETURN solveNonLinearGetFirstSolution - Elapsed time: 0.010506s
+Time used: 0.009567
+Improving Solution with cost 2 ...
+
+LOG: CALL solveNonLinearGetNextSolution
+
+LOG: RETURN solveNonLinearGetNextSolution - Elapsed time: 0.018908s
+Time used: 0.010488
+
+LOG: SAT solveNonLinear - Elapsed time: 0.029414s
+Cost: 2; Total time: 0.020055
+[31mFailed at location 2: 0 <= main_x[0m
+Before Improving: 
+[36mQuasi-invariant at l2: 0 <= main_x[0m
+Optimizing invariants...
+
+LOG: CALL solveLinear
+
+LOG: RETURN solveLinear - Elapsed time: 0.002232s
+Remaining time after improvement: 0.998982
+[33mNon-termination implied by a set of quasi-invariant(s):[0m
+[36mQuasi-invariant at l2: 0 <= main_x[0m

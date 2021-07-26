@@ -1,0 +1,16 @@
+Proving non-termination of subgraph 1
+Transitions:
+<l2, l2, 50001 <= main_x /\ 50001 + main_y <= main_x /\ 50001 <= main_x + main_y /\ 50001 <= main_y, {main_x -> main_x + main_y, main_y -> 1 + main_y, rest remain the same}>
+Variables:
+main_x, main_y
+
+Checking conditional non-termination of SCC {l2}...
+EXIT TRANSITIONS:
+<l2, end, 50001 <= main_x /\ 50001 + main_y <= main_x /\ main_y <= 50000, {all remain the same}>
+<l2, end, 50001 <= main_x /\ 50001 <= main_x + main_y /\ main_x <= 50000 + main_y, {all remain the same}>
+<l2, end, 50001 + main_y <= main_x /\ main_x <= 50000 /\ main_x + main_y <= 50000 /\ main_y <= 50000, {all remain the same}>
+<l2, end, main_x <= 50000 /\ main_x <= 50000 + main_y, {all remain the same}>
+
+[23132 : 23133]
+[23132 : 23134]
+[23132 : 23135]

@@ -1,0 +1,66 @@
+Proving non-termination of subgraph 1
+Transitions:
+<l2, l2, 0 <= main_x /\ 0 <= main_x + main_y, {main_x -> main_x + main_y, main_y -> 1 + main_y, rest remain the same}>
+Variables:
+main_x, main_y
+
+Checking conditional non-termination of SCC {l2}...
+EXIT TRANSITIONS:
+<l2, end, 0 <= main_x /\ 1 + main_x + main_y <= 0, {all remain the same}>
+<l2, end, 1 + main_x <= 0, {all remain the same}>
+
+[23128 : 23129]
+[23128 : 23130]
+[23128 : 23131]
+Successful child: 23129
+
+[33mStrengthening and disabling EXIT transitions...[0m
+Closed exits from l2: 1
+Strengthening exit transition (result): 
+<l2, end, 0 <= main_x /\ 1 + main_x + main_y <= 0, {all remain the same}>
+
+[33mStrengthening and disabling transitions...[0m
+
+LOG: CALL solverLinear in Graph for feasibility
+
+LOG: RETURN solveLinear in Graph for feasibility
+Strengthening transition (result): 
+<l2, l2, 0 <= main_x /\ 0 <= main_x + main_y, {main_x -> main_x + main_y, main_y -> 1 + main_y, rest remain the same}>
+
+Checking conditional non-termination of SCC {l2}...
+EXIT TRANSITIONS:
+<l2, end, 0 <= main_x /\ 1 + main_x + main_y <= 0, {all remain the same}>
+
+[23128 : 23136]
+[23128 : 23137]
+[23128 : 23138]
+Successful child: 23136
+
+[33mStrengthening and disabling EXIT transitions...[0m
+Closed exits from l2: 1
+
+[33mStrengthening and disabling transitions...[0m
+
+LOG: CALL solverLinear in Graph for feasibility
+
+LOG: RETURN solveLinear in Graph for feasibility
+Strengthening transition (result): 
+<l2, l2, 0 <= main_x /\ 0 <= main_x + main_y /\ 1 <= main_y, {main_x -> main_x + main_y, main_y -> 1 + main_y, rest remain the same}>
+
+Calling reachability with...
+Transition: <l2, end, true, {all remain the same}>
+Conditions: 0 <= main_x, 1 <= main_y, 
+OPEN EXITS: 
+<l2, end, 0 <= main_x /\ 1 <= main_y, {all remain the same}>
+
+--- Reachability graph ---
+> Graph without transitions.
+
+Calling reachability with...
+Transition: <l0, l2, main_x = undef3 /\ main_y = undef4, {all remain the same}>
+Conditions: 0 <= main_x, 1 <= main_y, 
+OPEN EXITS: 
+<l0, l2, 0 <= main_x /\ 1 <= main_y /\ main_x = undef3 /\ main_y = undef4, {all remain the same}>
+
+[32m> Conditions are reachable![0m
+

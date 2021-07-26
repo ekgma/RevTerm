@@ -1,0 +1,9 @@
+Solving with 1 template(s).
+
+LOG: CALL solveNonLinearGetFirstSolution
+
+LOG: RETURN solveNonLinearGetFirstSolution - Elapsed time: 0.019860s
+Time used: 0.014156
+Improving Solution with cost 8 ...
+
+LOG: CALL solveNonLinearGetNextSolution

@@ -1,0 +1,27 @@
+					#!/bin/bash
+
+./verymax -solver-timeout 4 -global-timeout $STAREXEC_WALLCLOCK_LIMIT -nt-graph original $1 &> outproof.txt
+
+res=$?
+
+if [ -f outproof.txt ]
+then 
+  if [ $res -eq 1 ] 
+  then 
+    echo "YES"
+    echo
+    cat outproof.txt
+  elif [ $res -eq 2 ] 
+  then
+    echo "NO" 
+    echo
+    cat outproof.txt
+  else
+    echo "MAYBE"
+  fi
+else 
+  echo "MAYBE"
+fi
+
+delete
+edit 
