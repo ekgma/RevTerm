@@ -9,6 +9,8 @@ RevTerm is a static analysis tool for proving non-termination of integer C progr
 
 RevTerm takes an integer C program as an input (syntax of input programs is described at http://termination-portal.org/wiki/C_Integer_Programs). The program is then converted to an equivalent T2 program (another input format which is common in termination analysis, for examples see https://github.com/mmjb/T2). RevTerm then tries to prove whether this program is non-terminating.
 
+RevTerm is a prototype tool implementing the method for proving non-termination presented in the PLDI 2021 paper Proving Non-termination by Program Reversal (https://dl.acm.org/doi/abs/10.1145/3453483.3454093) by Krishnendu Chatterjee, Ehsan Kafshdar Goharshady, Petr Novotny and Djordje Zikelic.
+
 2. Dependencies 
 
 RevTerm is written in Java. To run the tool, it is recommended to have Java 8 or a newer version installed.
